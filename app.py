@@ -5,6 +5,7 @@ import warnings
 import shutil
 from pathlib import Path
 import streamlit as st
+from dotenv import load_dotenv
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import DashScopeEmbeddings
@@ -13,9 +14,11 @@ from langchain_community.chat_models.tongyi import ChatTongyi
 
 warnings.filterwarnings("ignore")
 
-# 配置
-DASHSCOPE_API_KEY = ""
+# 加载本地.env密钥文件
+load_dotenv()
 BASE_VECTOR_ROOT = "./vector_stores"
+# 从环境文件读取密钥，代码里不再写明文key
+DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY")
 os.environ["DASHSCOPE_API_KEY"] = DASHSCOPE_API_KEY
 
 Path(BASE_VECTOR_ROOT).mkdir(parents=True, exist_ok=True)
