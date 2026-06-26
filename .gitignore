@@ -1,7 +1,12 @@
-.venv/
-__pycache__/
-*.csv
-tmp_upload.pdf
+# 密钥文件
 .env
+# 向量库文件夹
+vector_stores/
+# 虚拟环境
+.venv/
+# 生成的数据文件
 qa_records.csv
-错题*.csv
+错题_*.csv
+# 缓存文件
+__pycache__/
+*.log
