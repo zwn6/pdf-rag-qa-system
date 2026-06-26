@@ -14,7 +14,7 @@ from langchain_community.chat_models.tongyi import ChatTongyi
 warnings.filterwarnings("ignore")
 
 # 配置
-DASHSCOPE_API_KEY = "sk-81c9bfdd3ed44c3eba0457f550f1db16"
+DASHSCOPE_API_KEY = ""
 BASE_VECTOR_ROOT = "./vector_stores"
 os.environ["DASHSCOPE_API_KEY"] = DASHSCOPE_API_KEY
 
