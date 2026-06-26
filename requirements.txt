@@ -3,4 +3,6 @@ langchain==0.2.10
 langchain-community==0.2.10
 faiss-cpu==1.8.0
 dashscope==1.20.0
+python-dotenv==1.0.1
+pypdf==4.3.0
 pyinstaller==6.21.0
