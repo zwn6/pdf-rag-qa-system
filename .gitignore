@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.csv
+tmp_upload.pdf
+qa_records.csv
+错题*.csv
