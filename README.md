@@ -22,6 +22,9 @@ Python版本：3.12.1
 依赖包写在requirements.txt内。
 
 ## 部署启动方式
+前置准备
+在项目根目录新建.env文件，填入自己的阿里云通义千问 API 密钥
+依赖清单：requirements.txt
 ### 方式1：一键启动（推荐Windows）
 1. 解压项目文件夹
 2. 双击「启动项目.bat」脚本
@@ -30,6 +33,7 @@ Python版本：3.12.1
 ### 方式2：命令行手动启动
 ```bash
 # 激活虚拟环境
+python -m venv .venv
 .venv\Scripts\activate
 # 安装依赖
 pip install -r requirements.txt
